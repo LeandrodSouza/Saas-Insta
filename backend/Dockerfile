@@ -13,8 +13,11 @@ RUN npm install
 # Bundle app source
 COPY . .
 
+# Build the TypeScript project
+RUN npm run build
+
 # Make port 3000 available to the world outside this container
 EXPOSE 3000
 
 # Run the app when the container launches
-CMD ["node", "index.js"]
+CMD ["npm", "run", "start:prod"]
