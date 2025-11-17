@@ -20,4 +20,4 @@ RUN npm run build
 EXPOSE 3000
 
 # Run the app when the container launches
-CMD ["npm", "run", "start:prod"]
+CMD ["npm", "run", "start:dev"]
